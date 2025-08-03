@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Aircraft Shooter</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <div id="startOverlay" style="
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  ">
+    <h1 style="color: #fff; font-size: 3em; margin-bottom: 0.5em; letter-spacing: 2px;"> Suggest Name </h1>
+    <h2 style="color: bisque; font-size: 1.5em; margin-bottom: 1em; font-weight: 400;">Survive, shoot, and fire!</h2>
+    <ul style="color: #fff; font-size: 1.1em; margin-bottom: 2em; text-align: left;">
+      <li>Use <b>Arrow keys</b> or <b>WASD</b> to fly</li>
+      <li>Press <b>Space</b> to shoot</li>
+      <li>Avoid enemy bullets and don't crash!</li>
+    </ul>
+    <button id="startButton" style="
+      font-size: 2em;
+      padding: 0.7em 2.5em;
+      border: none;
+      border-radius: 0.5em;
+      background: linear-gradient(90deg, #f50449 0%, #1aa621ea 100%);
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(60, 180, 80, 0.2);
+      transition: background 0.2s, transform 0.1s;
+    ">Start Game</button>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
